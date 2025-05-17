@@ -1,0 +1,112 @@
+.dashboard-card {
+  width: 43px; 
+  height: 180px;
+  perspective: 1000px; 
+  margin-right: 15px;
+  transition: all 0.3s ease-in-out;
+  transform-origin: center bottom;
+}
+  
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+  
+/* Default - Book is NOT flipped */
+.card-front, .card-back {
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+  
+/* Front Side - Book Spine */
+.card-front {
+  width: 55px;
+  background-color: #E47A24;
+  display: flex;
+  justify-content: flex-start;  /* Aligns text to the start (left) */
+  align-items: flex-start;  /* Aligns text to the top */
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  border-radius: 10px;
+  color: #FFFAE8;
+  padding: 6px; 
+}
+
+.card-front h3 {
+  margin: 0;
+  font-size: 14px;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+  
+/* Back Side - Expanded View */
+.card-back {
+  width: 80px; 
+  background-color: #D65124;
+  color: white;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 9px;
+  opacity: 0; /* Hide until hover */
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.card-back img{
+  border-radius: 5px;
+}
+
+.dashboard-card:hover {
+  width: 70px; 
+}
+  
+.dashboard-card:hover .card-inner {
+  transform: rotateY(180deg); /* Flip */
+}
+  
+.dashboard-card:hover .card-back {
+  opacity: 1; 
+}
+  
+.dashboard-card:hover .card-front {
+  opacity: 0; 
+}
+  
+/* Book Cover */
+.book-cover {
+  width: 60px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 5px; 
+}
+
+.card-back h3, .card-back p {
+  margin: 2px 0;
+  text-align: center;
+}
+  
+.top-books-list {
+  display: flex;
+  gap: 20px; 
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+  
+.top-books-list:hover .dashboard-card:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.7;
+}
+  

@@ -1,28 +1,40 @@
 {
-  "name": "shelfy_react_app",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/dom": "^10.4.0",
-    "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^16.3.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "name": "241077_-angie-van-rooyen-formative-one-shelfy",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngievR05/241077_-angie-van-rooyen-formative-one-shelfy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngievR05/241077_-angie-van-rooyen-formative-one-shelfy/issues"
+  },
+  "homepage": "/AngievR05/241077_-angie-van-rooyen-formative-one-shelf",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "chart.js": "^4.4.8",
+    "d3": "^7.9.0",
+    "lucide-react": "^0.477.0",
+    "react": "^18.2.0",
+    "react-chartjs-2": "^5.3.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^6.30.0",
+    "react-scripts": "^5.0.1",
+    "react-vertical-timeline-component": "^3.5.3",
+    "recharts": "^2.15.1",
+    "venn.js": "^0.2.20",
+    "web-vitals": "^4.2.4"
   },
   "browserslist": {
     "production": [

@@ -1,0 +1,39 @@
+Brief Technical Description 
+Shelfy is a React web application that allows users to search for books and visualise genre trends based on their search results. It’s designed to help readers, researchers, or casual users explore what kinds of books are most common within certain search terms, making book discovery more interactive and data-driven.
+
+1. API Used
+The app integrates with the Google Books API, which provides metadata about books, such as:
+
+    Title
+    Author(s)
+    Cover image
+    Description
+    Categories (used as genres)
+
+The app uses Axios to send HTTP GET requests to the API and handle responses efficiently.
+
+2. Visualisations
+Using Chart.js, Shelfy transforms the genre (category) data from search results into visual charts:
+
+    Bar Chart 
+    Pie Chart 
+
+These visuals are dynamically generated based on each user's search, offering quick insights into which genres dominate the current topic or keyword.
+
+3. Functionality Overview
+Users enter a search term (e.g.,"fantasy")
+
+The app fetches matching books from Google Books
+Relevant book info is displayed in a clean card layout
+Genres are extracted, counted, and visualised with Chart.js
+
+4. Assumptions & Limitations
+Genre data depends on availability: Not all books returned by the API include a categories field, which can limit the accuracy or depth of the visualizations.
+
+Genre classification is inconsistent: Google Books categories aren’t standardized; for example, “Fiction / Fantasy / Epic” and “Fantasy” might be treated as separate.
+
+Result cap: Google Books API limits the number of results per request (default: 10, max: 40), which might skew visual insights unless pagination or batch-fetching is added.
+
+No backend: Currently, Shelfy runs entirely on the frontend with no database or user account system.
+
+Search relevancy: The quality of results depends on Google Books’ search algorithm, which may not always match user expectations.

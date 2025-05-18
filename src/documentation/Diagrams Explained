@@ -1,0 +1,11 @@
+1. Component Diagram / Architecture Diagram
+This diagram breaks down the core structure of the Shelfy app, showing how different pieces of the system interact with each other. It outlines the frontend components like the Book List, Chart Viewer, Filter Bar, and State Manager, as well as the connection to external services like the Google Books API. The goal is to show how data flows between components and where responsibilities lie, from fetching and processing data to rendering it in the UI. It gives devs and stakeholders a high-level overview of how the app is organised and communicates internally.
+
+2. Data Flow Diagram (DFD)
+The Data Flow Diagram shows the lifecycle of data within the Shelfy app, starting from the moment it’s fetched from the Google Books API. It illustrates how that data is processed (filtered, mapped, and stored), then passed to visual elements like charts and book listings. This diagram focuses on how data moves, not what the components are. It’s all about the movement from raw API data to meaningful, interactive visual output. It’s useful for understanding performance implications and how user interactions trigger data changes.
+
+3. Use Case Diagram
+This diagram models the different types of users interacting with the Shelfy app and what actions they can perform. It includes use cases like “Search Books,” “View Genre Trends,” “Filter by Year,” or “Compare Authors.” Typical users might include casual viewers, book researchers, or data-curious readers. It helps identify the app’s functional requirements from a user-centered perspective, ensuring the UX is aligned with actual user goals and not just technical possibilities.
+
+4. Entity-Relationship (ER) Diagram
+The ER Diagram visualises the data structure of the Shelfy app — even if it’s API-driven. It shows how different entities like “Book,” “Author,” “Genre,” and “Publisher” relate to each other, and what attributes each entity holds (e.g., a Book has a Title, Author, Genre, and Published Date). It also outlines the frontend’s local models, like how chart data is structured, or how book cards are rendered based on processed API responses. It’s key for frontend devs and data handlers to understand what data is available, how it’s organised, and how different parts relate when building UI logic.

@@ -3,7 +3,7 @@
 > A pastel‑themed, React‑based dashboard turning Google Books data into interactive, human‑centered insights using Chart.js and Recharts.
 
 <p align="center">
-  <img src="./assets/shelfy_preview.png" alt="Shelfy preview" width="820">
+  <img src="https://github.com/AngievR05/shelfy_react_app/blob/main/src/documentation/Screenshots%20Samples/MacBook%20Air%20-%202.png" alt="Shelfy preview" width="950">
 </p>
 
 ---
@@ -152,17 +152,20 @@ The app will open at **http://localhost:3000**
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="./assets/dashboard.png" alt="Dashboard" width="820"><br/>
+  <img src="https://github.com/AngievR05/shelfy_react_app/blob/main/src/documentation/Screenshots%20Samples/The%20page%20shelf.png" alt="Dashboard" width="950"><br/>
+  <img src="https://github.com/AngievR05/shelfy_react_app/blob/main/src/documentation/Screenshots%20Samples/The%20data%20shelf.png" width="950"><br/>
+  <img src="https://github.com/AngievR05/shelfy_react_app/blob/main/src/documentation/Screenshots%20Samples/The%20rating%20shelf.png" width="950"><br/>
   <em>Dashboard — search, genre filtering, and featured books.</em>
 </p>
 
 <p align="center">
-  <img src="./assets/comparison.png" alt="Comparison View" width="820"><br/>
+  <img src="https://github.com/AngievR05/shelfy_react_app/blob/main/src/documentation/Screenshots%20Samples/Data%20Visualization.png" alt="Comparison View" width="950"><br/>
+  <img src="https://github.com/AngievR05/shelfy_react_app/blob/main/src/documentation/Screenshots%20Samples/Comparison%20book%20selection.png" alt="Comparison View" width="950"><br/>
   <em>Comparison View — visual radar and bar charts of two books.</em>
 </p>
 
 <p align="center">
-  <img src="./assets/modal.png" alt="Book Modal" width="820"><br/>
+  <img src="https://github.com/AngievR05/shelfy_react_app/blob/main/src/documentation/Screenshots%20Samples/Timeline%20More%20details%20about%20book.png" alt="Book Modal" width="950"><br/>
   <em>Book Modal — detailed data including rating and description.</em>
 </p>
 

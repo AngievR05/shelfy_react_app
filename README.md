@@ -1,64 +1,229 @@
-# Google Books API Data Visualization
+# 🌸 Shelfy — Google Books API Data Visualization
 
-## Overview
-This project is a web application that fetches book-related data from the Google Books API and visualizes it interactively using Chart.js. The frontend is built with React, and the backend handles API requests using Node.js. The application allows users to explore book data through different charts, offering an engaging way to analyze various book attributes.
+> A pastel‑themed, React‑based dashboard turning Google Books data into interactive, human‑centered insights using Chart.js and Recharts.
 
-## Features
-- **Fetches data** from the Google Books API to display book-related information.
-- **Interactive visualizations** using Chart.js (e.g., bar charts, line graphs).
-- **Responsive UI** built with React, ensuring compatibility across devices.
-- **Component-based architecture** for scalable and maintainable code.
-- **Filters and dropdowns** to allow users to interact with and refine the data displayed.
-
-## Technologies Used
-- **Frontend**: React, Chart.js, CSS
-- **Backend**: Node.js
-- **API**: Google Books API
-- **State Management**: React hooks
-- **Styling**: CSS for modern UI and responsiveness
-
-## Setup Instructions
-
-### Prerequisites
-Make sure you have the following installed:
-- **Node.js** (latest LTS version recommended)
-- **npm** for package management
-
-### Installation
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/AngievR05/241077_-angie-van-rooyen-formative-one-shelfy.git
-2. **Navigate to the project directory**:
-   cd 241077_-angie-van-rooyen-formative-one-shelfy
-3. **Install dependencies**: To install all necessary packages for both frontend and backend:
-   npm install
-4. **Set up environment variables**: Create a .env file in the root directory of the project and add any required environment variables, such as your Google Books API key or backend configurations (if any).
-5. **Run the development server**: To start the development server and launch the application, run:
-   npm start
-
-## Approach
-1. **Data Fetching**: The app asynchronously fetches book-related data from the Google Books API using React’s hooks (e.g., useEffect). The API data includes book titles, authors, publication dates, and more, which are visualized in various formats like bar and line charts.
-2. **State Management**: React’s state (useState) and hooks (e.g., useEffect, useContext) are used to manage the app’s state. Data is stored in the component’s state and passed between components for rendering.
-3. **Data Visualization**: Chart.js is used to create dynamic, interactive charts to display book data. Chart types include Bar, Line, Radar and Pie charts to showcase various trends and comparisons of book attributes.
-4. **Component-Based Design**: The UI is broken into reusable components (e.g., BookCard, ChartContainer, DropdownFilter). Components are structured to maintain separation of concerns and ensure modularity.
-5. **Styling & Responsiveness**: CSS is used to create a modern, clean layout. The design is responsive, ensuring it works well on both desktop and mobile devices.
-
-
-## License
-This project is open-source and licensed under the MIT License. Feel free to contribute and improve!
+<p align="center">
+  <img src="./assets/shelfy_preview.png" alt="Shelfy preview" width="820">
+</p>
 
 ---
-### Contributions
-Feel free to fork this repository and submit pull requests for new features, improvements, or bug fixes.
 
-Fork the repository to your GitHub account.
+## Table of Contents
+- [Overview](#overview)
+- [Live Demo & Repository](#live-demo--repository)
+- [Features](#features)
+- [Architecture](#architecture)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [Usage Guide](#usage-guide)
+- [Data Model & Sources](#data-model--sources)
+- [Screenshots](#screenshots)
+- [Development Process](#development-process)
+- [Testing](#testing)
+- [Limitations](#limitations)
+- [Roadmap / Future Improvements](#roadmap--future-improvements)
+- [Acknowledgements](#acknowledgements)
+- [Author](#author)
+- [License](#license)
 
-Create a new branch for your changes.
+---
 
-Make your modifications and ensure everything works as expected.
+## 🌿 Overview
+**Shelfy** is an interactive data visualization app that connects with the **Google Books API** to transform book metadata into meaningful, visual stories.  
+It’s built with **React** and designed using a **pastel‑inspired, minimal aesthetic** that emphasizes clarity, usability, and emotion in data interpretation.  
 
-Submit a pull request with a detailed description of the changes.
+Users can explore and compare books by genre, rating, price proxy, and publication recency through charts, filters, and modular interactions.
 
-### Contact
-For any inquiries or questions, please reach out to 241077@virtualwindow.co.za 
+---
+
+## 🔗 Live Demo & Repository
+**Repository:** [https://github.com/AngievR05/shelfy_react_app.git](https://github.com/AngievR05/shelfy_react_app.git)
+
+> For grading or review, clone this repo and run it locally as described below.
+
+---
+
+## 💫 Features
+- 🔍 **Search & Discover** — Fetch live book data using the Google Books API.
+- 🧠 **Interactive Charts** — Bar, Pie, and Radar charts powered by Chart.js & Recharts.
+- 🎨 **Pastel UI** — Soft, accessible color palette optimized for readability.
+- 🧭 **Genre Filtering** — Easily toggle between genres to update your dataset.
+- 📊 **Comparison Mode** — Compare two books visually across metrics like rating, pages, and recency.
+- 💬 **Book Modal** — Displays authors, ratings, page count, and cover in a clean overlay.
+- 🕒 **Timeline Visualization** — See when books were published relative to each other.
+- 📱 **Responsive Design** — Optimized for all screen sizes and devices.
+
+---
+
+## 🧩 Architecture
+```
+shelfy/
+├── public/
+│   └── index.html
+├── src/
+│   ├── assets/                # image assets for README/UI
+│   ├── components/            # reusable UI building blocks
+│   │   ├── BookList.js
+│   │   ├── BookModal.js
+│   │   ├── ChartSection.js
+│   │   ├── CombinedDataChart.js
+│   │   ├── GenreSelector.js
+│   │   ├── DashboardCard.js
+│   │   ├── Footer.js
+│   │   ├── PriceChart.js
+│   │   ├── RatingsChart.js
+│   │   └── Header.js
+│   ├── pages/
+│   │   ├── Dashboard.js
+│   │   ├── Comparison.js
+│   │   ├── Timeline.js
+│   │   └── NotFound.js
+│   ├── css/
+│   ├── App.js
+│   ├── index.js
+│   └── reportWebVitals.js
+└── package.json
+```
+
+---
+
+## 🧠 Tech Stack
+**Frontend:** React, Chart.js, Recharts, CSS3  
+**API:** Google Books API  
+**State Management:** React Hooks (`useState`, `useEffect`)  
+**Tooling:** Create React App  
+**Styling:** Modular CSS (lightweight pastel theme)
+
+<div align="center">
+  
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=000)
+![Chart.js](https://img.shields.io/badge/Chart.js-FF6384?logo=chartdotjs&logoColor=fff)
+![Recharts](https://img.shields.io/badge/Recharts-22CEB1)
+![Google Books](https://img.shields.io/badge/Google%20Books%20API-4285F4?logo=google&logoColor=fff)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff)
+
+</div>
+
+---
+
+## 🧰 Getting Started
+
+### Prerequisites
+- Node.js (LTS version recommended)
+- npm
+
+### Installation
+```bash
+git clone https://github.com/AngievR05/shelfy_react_app.git
+cd shelfy_react_app
+npm install
+```
+
+### Environment Variables
+To use your own Google Books API key, create a `.env` file:
+```
+REACT_APP_GOOGLE_BOOKS_API_KEY=your_key_here
+```
+
+### Run Locally
+```bash
+npm start
+```
+The app will open at **http://localhost:3000**
+
+---
+
+## 🧭 Usage Guide
+1. Enter a keyword or book title to search.
+2. Select a genre from the toggle list.
+3. Click on a book to open its detailed modal.
+4. Switch to **Comparison Mode** to compare books visually.
+5. View **Timeline** for historical publishing trends.
+
+---
+
+## 📈 Data Model & Sources
+**Source:** Google Books API `/volumes` endpoint  
+**Mapped Fields:** `title`, `authors`, `averageRating`, `pageCount`, `publishedDate`, and `imageLinks.thumbnail`  
+**Normalization:** Missing data is gracefully handled (e.g., "No Rating" labels).
+
+---
+
+## 📸 Screenshots
+
+<p align="center">
+  <img src="./assets/dashboard.png" alt="Dashboard" width="820"><br/>
+  <em>Dashboard — search, genre filtering, and featured books.</em>
+</p>
+
+<p align="center">
+  <img src="./assets/comparison.png" alt="Comparison View" width="820"><br/>
+  <em>Comparison View — visual radar and bar charts of two books.</em>
+</p>
+
+<p align="center">
+  <img src="./assets/modal.png" alt="Book Modal" width="820"><br/>
+  <em>Book Modal — detailed data including rating and description.</em>
+</p>
+
+---
+
+## 🧩 Development Process
+
+### Design Decisions
+- Emphasized **data storytelling** with a calm, user‑friendly visual tone.  
+- Chose **pastel palette** to balance readability and emotional engagement.  
+- Component modularity for scalability and reusability.
+
+### State Management
+- Local and lifted state via `useState` and `useEffect`.
+- Derived data structures feed chart components cleanly.
+
+### Accessibility
+- Proper aria‑labels, semantic headings, and tab navigation.
+- Tested for contrast compliance (WCAG AA).
+
+### Performance
+- Debounced search requests.
+- Lazy‑loading charts when inactive.
+- Minimal re‑renders using memoized props.
+
+---
+
+## 🧪 Testing
+- Manual exploration for search, chart rendering, and filters.  
+- Edge‑case testing with missing ratings or malformed API responses.
+
+---
+
+## ⚠️ Limitations
+- Some API responses lack price or rating data.  
+- API rate limits may slow down consecutive searches.  
+
+---
+
+## 🚀 Roadmap / Future Improvements
+- Add **local storage** for saving previous searches.  
+- Implement **weighted scoring algorithm** for comparing books.  
+- Introduce **dark mode** toggle.  
+- Add **chart export** and print‑friendly views.  
+- Expand into **author insights** using additional endpoints.
+
+---
+
+## 🌼 Acknowledgements
+- Google Books API  
+- Chart.js & Recharts community  
+- Open Window DV200 faculty for project brief and guidance  
+
+---
+
+## 👩‍💻 Author
+**Angie Christine van Rooyen**  
+📧 241077@virtualwindow.co.za  
+🔗 [LinkedIn](https://www.linkedin.com/in/angie-van-rooyen-7008712a7/)
+
+---
+
+## 📜 License
+Licensed under the **MIT License** — feel free to fork, improve, or build upon this project.

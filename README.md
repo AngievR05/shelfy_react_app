@@ -1,6 +1,6 @@
-# 🌸 Shelfy — Google Books API Data Visualization
+# 🌸 Shelfy - Google Books API Data Visualisation
 
-> A pastel‑themed, React‑based dashboard turning Google Books data into interactive, human‑centered insights using Chart.js and Recharts.
+> A pastel‑themed, React‑based dashboard turning Google Books data into interactive, human-centred insights using Chart.js and Recharts.
 
 <p align="center">
   <img src="https://github.com/AngievR05/shelfy_react_app/blob/main/src/documentation/Screenshots%20Samples/MacBook%20Air%20-%202.png" alt="Shelfy preview" width="950">
@@ -29,8 +29,8 @@
 ---
 
 ## 🌿 Overview
-**Shelfy** is an interactive data visualization app that connects with the **Google Books API** to transform book metadata into meaningful, visual stories.  
-It’s built with **React** and designed using a **pastel‑inspired, minimal aesthetic** that emphasizes clarity, usability, and emotion in data interpretation.  
+**Shelfy** is an interactive data visualisation app that connects with the **Google Books API** to transform book metadata into meaningful, visual stories.  
+It’s built with **React** and designed using a **pastel‑inspired, minimal aesthetic** that emphasises clarity, usability, and emotion in data interpretation.  
 
 Users can explore and compare books by genre, rating, price proxy, and publication recency through charts, filters, and modular interactions.
 
@@ -46,12 +46,12 @@ Users can explore and compare books by genre, rating, price proxy, and publicati
 ## 💫 Features
 - 🔍 **Search & Discover** — Fetch live book data using the Google Books API.
 - 🧠 **Interactive Charts** — Bar, Pie, and Radar charts powered by Chart.js & Recharts.
-- 🎨 **Pastel UI** — Soft, accessible color palette optimized for readability.
+- 🎨 **Pastel UI** — Soft, accessible colour palette optimised for readability.
 - 🧭 **Genre Filtering** — Easily toggle between genres to update your dataset.
 - 📊 **Comparison Mode** — Compare two books visually across metrics like rating, pages, and recency.
 - 💬 **Book Modal** — Displays authors, ratings, page count, and cover in a clean overlay.
-- 🕒 **Timeline Visualization** — See when books were published relative to each other.
-- 📱 **Responsive Design** — Optimized for all screen sizes and devices.
+- 🕒 **Timeline Visualisation** — See when books were published relative to each other.
+- 📱 **Responsive Design** — Optimised for all screen sizes and devices.
 
 ---
 
@@ -145,7 +145,7 @@ The app will open at **http://localhost:3000**
 ## 📈 Data Model & Sources
 **Source:** Google Books API `/volumes` endpoint  
 **Mapped Fields:** `title`, `authors`, `averageRating`, `pageCount`, `publishedDate`, and `imageLinks.thumbnail`  
-**Normalization:** Missing data is gracefully handled (e.g., "No Rating" labels).
+**Normalisation:** Missing data is gracefully handled (e.g., "No Rating" labels).
 
 ---
 
@@ -174,8 +174,8 @@ The app will open at **http://localhost:3000**
 ## 🧩 Development Process
 
 ### Design Decisions
-- Emphasized **data storytelling** with a calm, user‑friendly visual tone.  
-- Chose **pastel palette** to balance readability and emotional engagement.  
+- Emphasised **data storytelling** with a calm, user‑friendly visual tone.  
+- Choose **pastel palette** to balance readability and emotional engagement.  
 - Component modularity for scalability and reusability.
 
 ### State Management
@@ -189,7 +189,7 @@ The app will open at **http://localhost:3000**
 ### Performance
 - Debounced search requests.
 - Lazy‑loading charts when inactive.
-- Minimal re‑renders using memoized props.
+- Minimal re‑renders using memoised props.
 
 ---
 
@@ -229,4 +229,4 @@ The app will open at **http://localhost:3000**
 ---
 
 ## 📜 License
-Licensed under the **MIT License** — feel free to fork, improve, or build upon this project.
+Licensed under the **MIT License**, feel free to fork, improve, or build upon this project.
